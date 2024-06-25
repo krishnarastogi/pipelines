@@ -52,7 +52,7 @@ class Pipeline:
                 "pipelines": ["*"],  # Connect to all pipelines
                 "secret_key": os.getenv("LANGFUSE_SECRET_KEY", "your-secret-key-here"),
                 "public_key": os.getenv("LANGFUSE_PUBLIC_KEY", "your-public-key-here"),
-                "host": os.getenv("LANGFUSE_HOST", "https://cloud.langfuse.com"),
+                "host": os.getenv("LANGFUSE_HOST", "http://localhost:4000"),
             }
         )
 
